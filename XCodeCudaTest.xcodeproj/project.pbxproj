@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0AA005AD146922E500A323D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AA005AC146922E500A323D9 /* main.cpp */; };
 		0AA005AF146922E500A323D9 /* XCodeCudaTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AA005AE146922E500A323D9 /* XCodeCudaTest.1 */; };
+		0AB32C81146A07D50042A2FE /* CUDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB32C80146A07D50042A2FE /* CUDA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		0AA005A8146922E500A323D9 /* XCodeCudaTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XCodeCudaTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA005AC146922E500A323D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0AA005AE146922E500A323D9 /* XCodeCudaTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = XCodeCudaTest.1; sourceTree = "<group>"; };
+		0AB32C80146A07D50042A2FE /* CUDA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CUDA.framework; path = Library/Frameworks/CUDA.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB32C81146A07D50042A2FE /* CUDA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		0AA0059D146922E500A323D9 = {
 			isa = PBXGroup;
 			children = (
+				0AB32C80146A07D50042A2FE /* CUDA.framework */,
 				0AA005AB146922E500A323D9 /* XCodeCudaTest */,
 				0AA005A9146922E500A323D9 /* Products */,
 			);
@@ -201,6 +205,7 @@
 				0AA005B4146922E500A323D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

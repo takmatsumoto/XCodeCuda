@@ -8,11 +8,30 @@
 
 #include <iostream>
 
+#include <CUDA/CUDA.h>
+bool InitCuda();
+
 int main (int argc, const char * argv[])
 {
 
     // insert code here...
     std::cout << "Hello, CUDA!\n";
+    
+    // 初始化
+    InitCuda();
+    
     return 0;
 }
 
+bool InitCuda() {
+    
+    int deviceCount = 0;
+    
+    cuDeviceGetCount(&deviceCount);
+#ifdef DEBUG
+    printf("GPU Device Count : %d\n",deviceCount);
+#endif    
+    
+    
+    return true;
+}
