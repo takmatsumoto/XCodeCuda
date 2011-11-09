@@ -9,6 +9,8 @@
 #include <iostream>
 
 #include <CUDA/CUDA.h>
+#include <CUDA/cudaProfiler.h>
+
 bool InitCuda();
 
 int main (int argc, const char * argv[])
@@ -25,11 +27,13 @@ int main (int argc, const char * argv[])
 
 bool InitCuda() {
     
-    int deviceCount = 0;
+    int deviceCount;
     
+    cuInit(0);
     cuDeviceGetCount(&deviceCount);
+    
 #ifdef DEBUG
-    printf("GPU Device Count : %d\n",deviceCount);
+    printf("CUDA Device Count : %d\n",deviceCount);
 #endif    
     
     
