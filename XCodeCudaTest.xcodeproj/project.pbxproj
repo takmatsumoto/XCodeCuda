@@ -30,6 +30,7 @@
 		0AA005AC146922E500A323D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0AA005AE146922E500A323D9 /* XCodeCudaTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = XCodeCudaTest.1; sourceTree = "<group>"; };
 		0AB32C80146A07D50042A2FE /* CUDA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CUDA.framework; path = Library/Frameworks/CUDA.framework; sourceTree = SDKROOT; };
+		0AB32C96146A69760042A2FE /* kernal_add.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kernal_add.cu; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 			children = (
 				0AA005AC146922E500A323D9 /* main.cpp */,
 				0AA005AE146922E500A323D9 /* XCodeCudaTest.1 */,
+				0AB32C96146A69760042A2FE /* kernal_add.cu */,
 			);
 			path = XCodeCudaTest;
 			sourceTree = "<group>";
